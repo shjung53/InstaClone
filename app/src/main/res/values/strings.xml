@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+    <string name="Home">홈</string>
 </resources>
