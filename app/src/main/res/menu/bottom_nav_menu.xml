@@ -4,13 +4,13 @@
     >
 
     <item android:id="@+id/homeFragment"
-        android:icon="@drawable/empty_home"
+        android:icon="@drawable/btm_nav_ic1"
         android:enabled="true"
         app:showAsAction="always"
         android:title="@string/Home"
         />
     <item android:id="@+id/searchFragment"
-        android:icon="@drawable/thin_search"
+        android:icon="@drawable/btm_nav_ic2"
         android:enabled="true"
         app:showAsAction="always"
         android:title="@string/Home"
@@ -22,7 +22,7 @@
         android:title="@string/Home"
         />
     <item android:id="@+id/shoppingFragment"
-        android:icon="@drawable/empty_bag"
+        android:icon="@drawable/btm_nav_ic4"
         android:enabled="true"
         app:showAsAction="always"
         android:title="@string/Home"
