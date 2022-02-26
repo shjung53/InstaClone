@@ -9,6 +9,7 @@ import com.example.instagramClone.databinding.FragmentHomeBinding
 
 class HomeFragment: Fragment() {
     lateinit var binding: FragmentHomeBinding
+    var profileImg = ArrayList<ProfileData>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,12 +19,18 @@ class HomeFragment: Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
 
-        val storyAdapter = StoryRVAdapter()
+        val storyAdapter = StoryRVAdapter(profileImg)
         binding.homeStoryRv.adapter = storyAdapter
         binding.homeStoryRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
-
-
+        profileImg.apply {
+            add(ProfileData(R.drawable.picture1))
+            add(ProfileData(R.drawable.picture2))
+            add(ProfileData(R.drawable.picture3))
+            add(ProfileData(R.drawable.picture4))
+            add(ProfileData(R.drawable.picture5))
+        }
+        storyAdapter.notifyItemInserted(profileImg.size)
 
 
 

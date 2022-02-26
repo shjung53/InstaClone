@@ -8,8 +8,9 @@
     >
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:id="@+id/item_story_civ"
+        android:layout_width="@dimen/story_size"
+        android:layout_height="@dimen/story_size"
         android:src="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

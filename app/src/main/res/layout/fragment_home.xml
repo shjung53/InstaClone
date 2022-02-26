@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/home_appBar_cv"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/appBar_height"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,18 +20,19 @@
             android:layout_height="match_parent">
         <ImageView
             android:id="@+id/home_logo_iv"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:adjustViewBounds="true"
             android:layout_height="match_parent"
             android:src="@drawable/instagram_logo_text"
             android:scaleType="centerCrop"
+            android:layout_marginVertical="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />
         <ImageView
             android:id="@+id/home_plus_iv"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
             android:src="@drawable/ic_plus"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,8 +41,8 @@
             />
         <ImageView
             android:id="@+id/home_heart_iv"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
             android:src="@drawable/ic_empty_heart"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -50,8 +51,8 @@
             />
         <ImageView
             android:id="@+id/home_plane_iv"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
             android:src="@drawable/ic_plane"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
