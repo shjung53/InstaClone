@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/shjung/StudioProjects/InstaClone/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/shjung/StudioProjects/InstaClone/app/src/main/res/layout/item_story.xml" value="0.25" />
         <entry key="..\:/Users/suhyun/StudioProjects/InstagramClone/app/src/main/res/drawable/btm_item_select.xml" value="0.2285" />
         <entry key="..\:/Users/suhyun/StudioProjects/InstagramClone/app/src/main/res/drawable/btm_nav_ic1.xml" value="0.2285" />
         <entry key="..\:/Users/suhyun/StudioProjects/InstagramClone/app/src/main/res/drawable/btm_nav_ic2.xml" value="0.2285" />

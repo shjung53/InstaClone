@@ -4,6 +4,7 @@
     <dimen name="appBar_height">60dp</dimen>
     <dimen name="icon_size">25dp</dimen>
     <dimen name="story_size">60dp</dimen>
+    <dimen name="story_id">12sp</dimen>
 
 
 </resources>

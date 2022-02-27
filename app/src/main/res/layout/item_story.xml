@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingEnd="20dp"
+    android:paddingEnd="25dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
@@ -14,6 +14,17 @@
         android:src="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:layout_width="@dimen/story_size"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/item_story_civ"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="내 스토리"
+        android:textSize="@dimen/story_id"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
         />
 
 

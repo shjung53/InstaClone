@@ -84,6 +84,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/home_feeds_rv"
+            android:layout_marginStart="20dp"
             />
 
             <androidx.recyclerview.widget.RecyclerView
