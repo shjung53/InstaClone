@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="btm_nav_icon">25dp</dimen>
-    <dimen name="appBar_height">60dp</dimen>
-    <dimen name="icon_size">25dp</dimen>
-    <dimen name="story_size">60dp</dimen>
-    <dimen name="story_id">12sp</dimen>
+    <dimen name="btm_nav_icon_dp">25dp</dimen>
+    <dimen name="appBar_height_dp">60dp</dimen>
+    <dimen name="icon_size_dp">25dp</dimen>
+    <dimen name="story_size_dp">60dp</dimen>
+    <dimen name="story_id_sp">12sp</dimen>
+    <dimen name="feed_profile_dp">30dp</dimen>
+    <dimen name="margin_start_dp">20dp</dimen>
+    <dimen name="margin_vertical_dp">15dp</dimen>
+    <dimen name="feed_id_sp">16sp</dimen>
 
 
 </resources>

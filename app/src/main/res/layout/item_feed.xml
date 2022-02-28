@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="25dp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_feed_profile_civ"
+        android:layout_width="@dimen/feed_profile_dp"
+        android:layout_height="@dimen/feed_profile_dp"
+        android:src="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        android:layout_marginTop="@dimen/margin_vertical_dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dduddu_doncici"
+        android:textColor="@color/black"
+        android:textSize="@dimen/feed_id_sp"
+        app:layout_constraintStart_toEndOf="@id/item_feed_profile_civ"
+        app:layout_constraintTop_toTopOf="@id/item_feed_profile_civ"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_profile_civ"
+        android:layout_marginStart="@dimen/margin_vertical_dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_3dot"
+        app:layout_constraintTop_toTopOf="@id/item_feed_profile_civ"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_profile_civ"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_start_dp"
+        />
+    <ImageView
+        android:id="@+id/item_feed_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_profile_civ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_vertical_dp"
+        />
+    <ImageView
+        android:id="@+id/feed_heart_iv"
+        android:layout_width="@dimen/icon_size_dp"
+        android:layout_height="@dimen/icon_size_dp"
+        android:src="@drawable/ic_empty_heart"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_image_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_vertical_dp"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        />
+
+    <ImageView
+        android:id="@+id/feed_comment_iv"
+        android:layout_width="@dimen/icon_size_dp"
+        android:layout_height="@dimen/icon_size_dp"
+        android:src="@drawable/send"
+        app:layout_constraintTop_toTopOf="@id/feed_heart_iv"
+        app:layout_constraintBottom_toBottomOf="@id/feed_heart_iv"
+        app:layout_constraintStart_toEndOf="@id/feed_heart_iv"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

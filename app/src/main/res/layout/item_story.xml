@@ -9,19 +9,19 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/item_story_civ"
-        android:layout_width="@dimen/story_size"
-        android:layout_height="@dimen/story_size"
+        android:layout_width="@dimen/story_size_dp"
+        android:layout_height="@dimen/story_size_dp"
         android:src="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
     <TextView
-        android:layout_width="@dimen/story_size"
+        android:layout_width="@dimen/story_size_dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/item_story_civ"
         app:layout_constraintStart_toStartOf="parent"
         android:text="내 스토리"
-        android:textSize="@dimen/story_id"
+        android:textSize="@dimen/story_id_sp"
         android:textColor="@color/black"
         android:gravity="center"
         android:layout_marginTop="10dp"
