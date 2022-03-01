@@ -60,10 +60,21 @@
         android:id="@+id/feed_comment_iv"
         android:layout_width="@dimen/icon_size_dp"
         android:layout_height="@dimen/icon_size_dp"
-        android:src="@drawable/send"
+        android:src="@drawable/ic_comment"
         app:layout_constraintTop_toTopOf="@id/feed_heart_iv"
         app:layout_constraintBottom_toBottomOf="@id/feed_heart_iv"
         app:layout_constraintStart_toEndOf="@id/feed_heart_iv"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        />
+
+    <ImageView
+        android:id="@+id/feed_send_iv"
+        android:layout_width="@dimen/icon_size_dp"
+        android:layout_height="@dimen/icon_size_dp"
+        android:src="@drawable/ic_plane"
+        app:layout_constraintTop_toTopOf="@id/feed_heart_iv"
+        app:layout_constraintBottom_toBottomOf="@id/feed_heart_iv"
+        app:layout_constraintStart_toEndOf="@id/feed_comment_iv"
         android:layout_marginStart="@dimen/margin_start_dp"
         />
 
