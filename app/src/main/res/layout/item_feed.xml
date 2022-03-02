@@ -16,9 +16,10 @@
         android:layout_marginTop="@dimen/margin_vertical_dp"
         />
     <TextView
+        android:id="@+id/feed_id_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dduddu_doncici"
+        android:text="@string/id"
         android:textColor="@color/black"
         android:textSize="@dimen/feed_id_sp"
         app:layout_constraintStart_toEndOf="@id/item_feed_profile_civ"
@@ -46,7 +47,7 @@
         android:layout_marginTop="@dimen/margin_vertical_dp"
         />
     <ImageView
-        android:id="@+id/feed_heart_iv"
+        android:id="@+id/item_feed_heart_iv"
         android:layout_width="@dimen/icon_size_dp"
         android:layout_height="@dimen/icon_size_dp"
         android:src="@drawable/ic_empty_heart"
@@ -57,25 +58,88 @@
         />
 
     <ImageView
-        android:id="@+id/feed_comment_iv"
+        android:id="@+id/item_feed_comment_iv"
         android:layout_width="@dimen/icon_size_dp"
         android:layout_height="@dimen/icon_size_dp"
         android:src="@drawable/ic_comment"
-        app:layout_constraintTop_toTopOf="@id/feed_heart_iv"
-        app:layout_constraintBottom_toBottomOf="@id/feed_heart_iv"
-        app:layout_constraintStart_toEndOf="@id/feed_heart_iv"
+        app:layout_constraintTop_toTopOf="@id/item_feed_heart_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_heart_iv"
+        app:layout_constraintStart_toEndOf="@id/item_feed_heart_iv"
         android:layout_marginStart="@dimen/margin_start_dp"
         />
 
     <ImageView
-        android:id="@+id/feed_send_iv"
+        android:id="@+id/item_feed_send_iv"
         android:layout_width="@dimen/icon_size_dp"
         android:layout_height="@dimen/icon_size_dp"
         android:src="@drawable/ic_plane"
-        app:layout_constraintTop_toTopOf="@id/feed_heart_iv"
-        app:layout_constraintBottom_toBottomOf="@id/feed_heart_iv"
-        app:layout_constraintStart_toEndOf="@id/feed_comment_iv"
+        app:layout_constraintTop_toTopOf="@id/item_feed_heart_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_heart_iv"
+        app:layout_constraintStart_toEndOf="@id/item_feed_comment_iv"
         android:layout_marginStart="@dimen/margin_start_dp"
+        />item_
+
+    <ImageView
+        android:id="@+id/item_feed_bookmark_iv"
+        android:layout_width="@dimen/icon_size_dp"
+        android:layout_height="@dimen/icon_size_dp"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintTop_toTopOf="@id/item_feed_heart_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_heart_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        android:layout_marginEnd="@dimen/margin_start_dp"
+        />
+    <TextView
+        android:id="@+id/item_feed_like_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아요 12개"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/feed_id_sp"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_heart_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_vertical_dp"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        />
+
+    <TextView
+        android:id="@+id/item_feed_post_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textColor="@color/black"
+        android:textSize="@dimen/feed_id_sp"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_like_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        />
+    <TextView
+        android:id="@+id/item_feed_post_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="날씨가 좋다"
+        android:textColor="@color/black"
+        android:textSize="@dimen/feed_id_sp"
+        app:layout_constraintTop_toTopOf="@id/item_feed_post_id_tv"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_post_id_tv"
+        app:layout_constraintStart_toEndOf="@id/item_feed_post_id_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="@dimen/margin_start_dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/item_feed_comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="댓글 27개 모두 보기"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_post_id_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start_dp"
+        android:layout_marginTop="5dp"
         />
 
 
