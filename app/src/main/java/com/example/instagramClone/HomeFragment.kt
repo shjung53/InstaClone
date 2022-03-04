@@ -5,7 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewpager2.widget.ViewPager2
 import com.example.instagramClone.databinding.FragmentHomeBinding
+import com.rd.PageIndicatorView
 
 class HomeFragment: Fragment() {
     lateinit var binding: FragmentHomeBinding
@@ -47,6 +49,20 @@ class HomeFragment: Fragment() {
             add(FeedData(R.drawable.picture5))
         }
         feedAdapter.notifyItemInserted(feedItem.size)
+
+        feedAdapter.setMyItemClickListener(object: HomeFeedsRVAdapter.MyItemClickListener{
+            override fun setVp(holder: HomeFeedsRVAdapter.ViewHolder) {
+                val feedImgVPAdapter = FeedImgVPAdapter(requireActivity())
+
+                holder.binding.itemFeedImageVp.adapter = feedImgVPAdapter
+                holder.binding.itemFeedImageVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
+                val vpIndicatorView: PageIndicatorView = holder.binding.itemFeedPageIndicatorPiv
+                vpIndicatorView.count = feedImgVPAdapter.itemCount
+            }
+
+        })
+
 
 
 

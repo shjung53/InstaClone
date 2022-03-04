@@ -35,8 +35,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="@dimen/margin_start_dp"
         />
-    <ImageView
-        android:id="@+id/item_feed_image_iv"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/item_feed_image_vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1"
@@ -44,13 +44,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/margin_vertical_dp"
+        android:scrollbars="none"
         />
     <ImageView
         android:id="@+id/item_feed_heart_iv"
         android:layout_width="@dimen/icon_size_dp"
         android:layout_height="@dimen/icon_size_dp"
         android:src="@drawable/ic_empty_heart"
-        app:layout_constraintTop_toBottomOf="@id/item_feed_image_iv"
+        app:layout_constraintTop_toBottomOf="@id/item_feed_image_vp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/margin_vertical_dp"
         android:layout_marginStart="@dimen/margin_start_dp"
@@ -76,7 +77,20 @@
         app:layout_constraintBottom_toBottomOf="@id/item_feed_heart_iv"
         app:layout_constraintStart_toEndOf="@id/item_feed_comment_iv"
         android:layout_marginStart="@dimen/margin_start_dp"
-        />item_
+        />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/item_feed_page_indicator_piv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piv_viewPager="@id/item_feed_image_vp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_feed_send_iv"
+        app:layout_constraintBottom_toBottomOf="@id/item_feed_send_iv"
+        app:piv_selectedColor="@color/blue"
+        app:piv_unselectedColor="@color/lightGray"
+        />
 
     <ImageView
         android:id="@+id/item_feed_bookmark_iv"
