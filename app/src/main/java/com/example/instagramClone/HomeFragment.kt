@@ -13,6 +13,7 @@ class HomeFragment: Fragment() {
     lateinit var binding: FragmentHomeBinding
     var profileImg = ArrayList<ProfileData>()
     var feedItem = ArrayList<FeedData>()
+    lateinit var feedImgVPAdapter : FeedImgVPAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,11 +58,19 @@ class HomeFragment: Fragment() {
                 holder.binding.itemFeedImageVp.adapter = feedImgVPAdapter
                 holder.binding.itemFeedImageVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
+                for(i in 1 .. feedItem.size){
+                    feedImgVPAdapter.addFragment(FeedImgVPFragment(feedItem[i-1]))}
+
+                feedImgVPAdapter.notifyItemInserted(feedItem.size)
+
                 val vpIndicatorView: PageIndicatorView = holder.binding.itemFeedPageIndicatorPiv
                 vpIndicatorView.count = feedImgVPAdapter.itemCount
+
             }
 
         })
+
+
 
 
 
