@@ -24,6 +24,7 @@ fun setMyItemClickListener(itemClickListener: MyItemClickListener){
 
     override fun onBindViewHolder(holder: HomeFeedsRVAdapter.ViewHolder, position: Int) {
         holder.bind(feedsItem[position])
+        mItemClickListener.setVp(holder)
     }
 
     override fun getItemCount(): Int = feedsItem.size

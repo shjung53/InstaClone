@@ -90,6 +90,10 @@
         app:layout_constraintBottom_toBottomOf="@id/item_feed_send_iv"
         app:piv_selectedColor="@color/blue"
         app:piv_unselectedColor="@color/lightGray"
+        app:piv_padding="10dp"
+        app:piv_radius="2dp"
+        app:piv_dynamicCount="true"
+        app:piv_animationType="none"
         />
 
     <ImageView

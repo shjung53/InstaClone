@@ -53,7 +53,7 @@ class HomeFragment: Fragment() {
 
         feedAdapter.setMyItemClickListener(object: HomeFeedsRVAdapter.MyItemClickListener{
             override fun setVp(holder: HomeFeedsRVAdapter.ViewHolder) {
-                val feedImgVPAdapter = FeedImgVPAdapter(requireActivity())
+                feedImgVPAdapter = FeedImgVPAdapter(requireActivity())
 
                 holder.binding.itemFeedImageVp.adapter = feedImgVPAdapter
                 holder.binding.itemFeedImageVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
