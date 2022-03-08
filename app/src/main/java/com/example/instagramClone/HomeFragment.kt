@@ -66,9 +66,18 @@ class HomeFragment: Fragment() {
                 val vpIndicatorView: PageIndicatorView = holder.binding.itemFeedPageIndicatorPiv
                 vpIndicatorView.count = feedImgVPAdapter.itemCount
 
+                holder.binding.itemFeedImageVp.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+                    override fun onPageSelected(position: Int) {
+                        super.onPageSelected(position)
+                        vpIndicatorView.selection = position
+                    }
+                })
+
             }
 
         })
+
+
 
 
 

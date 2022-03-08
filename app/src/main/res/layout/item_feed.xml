@@ -94,6 +94,7 @@
         app:piv_radius="2dp"
         app:piv_dynamicCount="true"
         app:piv_animationType="none"
+        android:layout_centerInParent="true"
         />
 
     <ImageView
