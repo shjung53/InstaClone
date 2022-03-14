@@ -15,6 +15,10 @@ class SearchFragment: Fragment() {
     ): View {
         binding = FragmentSearchBinding.inflate(inflater, container, false)
 
+        val searchFeedRVAdapter = SearchFeedsRVAdapter()
+
+        binding.searchGridRv.adapter = searchFeedRVAdapter
+
 
         return binding.root
     }
