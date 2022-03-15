@@ -19,5 +19,8 @@ class SearchFeedsRVAdapter(var feedItem : ArrayList<FeedData>): RecyclerView.Ada
 
     inner class ViewHolder(binding: ItemFeedBinding): RecyclerView.ViewHolder(binding.root){
 
+
+
+
     }
 }
