@@ -33,6 +33,8 @@ class SearchFragment: Fragment() {
         searchFeedRVAdapter.notifyItemInserted(feedItem.size)
 
 
+
+
         return binding.root
     }
 }
