@@ -30,6 +30,9 @@ class SearchFragment: Fragment() {
             add(FeedData(R.drawable.picture4))
             add(FeedData(R.drawable.picture5))
         }
+
+
+
         searchFeedRVAdapter.notifyItemInserted(feedItem.size)
 
         return binding.root
