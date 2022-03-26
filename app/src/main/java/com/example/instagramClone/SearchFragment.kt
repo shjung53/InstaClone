@@ -24,6 +24,7 @@ class SearchFragment: Fragment() {
         binding.searchGridRv.layoutManager = gridLayoutManager
 
         feedItem.apply {
+
             add(FeedData(R.drawable.picture1))
             add(FeedData(R.drawable.picture2))
             add(FeedData(R.drawable.picture3))
